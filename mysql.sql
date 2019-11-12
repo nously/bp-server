@@ -122,6 +122,7 @@ CREATE TABLE Cases (
     id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     field_id INT(10) UNSIGNED,
     lawyer_id INT(10) UNSIGNED,
+    title VARCHAR(50) NOT NULL, 
     client_name VARCHAR(70) NOT NULL,
     description TEXT NOT NULL,
     photo TEXT NOT NULL,
