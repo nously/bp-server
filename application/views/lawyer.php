@@ -30,14 +30,13 @@
                     </div>
             <div class="row">
                 
-                <?php foreach ($lawyers as $lawyer): ?>
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_loyers text-center">
                         <div class="thumb">
-                            <img src="<?php echo base_url() . $lawyer->photo; ?>" class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
                         </div>
-                        <h3><?php echo $lawyer->name; ?></h3>
-                        <span><?php echo $lawyer->field ?></span>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
                         <div class="social_links">
                             <ul>
                                 <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
@@ -47,7 +46,92 @@
                         </div>
                     </div>
                 </div>
-                <?php endforeach ?>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
 
             </div>
         </div>

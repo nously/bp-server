@@ -49,23 +49,23 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                                        <li><a href="<?php echo base_url(); ?>about">About</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php">Home</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/about">About</a></li>
                                         <li><a href="#">Lawyer <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="<?php echo base_url(); ?>lawyer">Overview</a></li>
-                                                <li><a href="<?php echo base_url(); ?>lawyer/education">Education</a></li>
+                                                <li><a href="<?php echo base_url(); ?>index.php/lawyer">Overview</a></li>
+                                                <li><a href="<?php echo base_url(); ?>index.php/lawyer/education">Education</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Cases <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="<?php echo base_url(); ?>cases/business">Business Law</a></li>
-                                                <li><a href="<?php echo base_url(); ?>cases/finance">Finance Law</a></li>
-                                                <li><a href="<?php echo base_url(); ?>cases/family">Family Law</a></li>
-                                                <li><a href="<?php echo base_url(); ?>cases/education">Education Law</a></li>
+                                                <li><a href="<?php echo base_url(); ?>index.php/cases/business">Business Law</a></li>
+                                                <li><a href="<?php echo base_url(); ?>index.php/cases/finance">Finance Law</a></li>
+                                                <li><a href="<?php echo base_url(); ?>index.php/cases/family">Family Law</a></li>
+                                                <li><a href="<?php echo base_url(); ?>index.php/cases/education">Education Law</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

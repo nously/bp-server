@@ -18,10 +18,6 @@ class Contact extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function __construct() {
-		parent::__construct();
-		$this->load->model('Message');
-	}
 
 	public function index()
 	{
@@ -30,21 +26,6 @@ class Contact extends CI_Controller {
 
 	public function send()
 	{
-        $this->load->library('form_validation');
-
-        // rules
-        $this->form_validation->set_rules('name', 'Name', 'required');
-        $this->form_validation->set_rules('email', 'E-mail', 'required|valid_email');
-        $this->form_validation->set_rules('subject', 'Subject', 'required');
-        $this->form_validation->set_rules('message', 'Message', 'required');
-
-        if ($this->form_validation->run() === FALSE) {
-            $this->session->set_flashdata('msg', 'Sorry, we found something wrong in your contact message. Please try again.');
-            redirect(base_url() . 'index.php/contact');
-        } else {
-            $this->Message->post();
-            $this->session->set_flashdata('msg', 'Thank you for contacting us! We sure will respond your message as best as we can.');
-            redirect(base_url() . 'index.php/contact');
-        }	
+		redirect(base_url() . 'index.php/contact');
 	}
 }

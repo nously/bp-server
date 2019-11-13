@@ -19,18 +19,8 @@ class About extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function __construct() {
-		parent::__construct();
-		$this->load->model('Lawyers');
-		$this->load->model('Testimony');
-	}
-
-
 	public function index()
 	{
-		$data['lawyers'] = $this->Lawyers->getThree();
-		$data['testimonials'] = $this->Testimony->getAll();
-
-		$this->load->view('about', $data);
+		$this->load->view('about');
 	}
 }

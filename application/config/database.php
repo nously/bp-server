@@ -75,9 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'database-1.cnu4bsgtuywz.us-east-1.rds.amazonaws.com',
-	'username' => 'admin',
-	'password' => 'adminadmin',
+	// 'hostname' => 'database-1.cnu4bsgtuywz.us-east-1.rds.amazonaws.com',
+	// 'username' => 'admin',
+	// 'password' => 'adminadmin',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'bigprojectdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

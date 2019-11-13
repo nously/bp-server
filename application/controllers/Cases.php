@@ -19,37 +19,29 @@ class Cases extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function __construct() {
-        parent::__construct();
-		$this->load->model('MCases');
-	}
-
 	public function index()
 	{
-		$this->load->view('cases');
+		$this->load->view('case_business');
 	}
 
 	public function business()
 	{
-		$data['cases'] = $this->MCases->getBusinessCase();
-		$this->load->view('case_business', $data);
+		$this->load->view('case_business');
 	}
 
 	public function education()
 	{
-		$data['cases'] = $this->MCases->getEducationCase();
-		$this->load->view('case_education', $data);
+		$this->load->view('case_business');
+
 	}
 
 	public function family()
 	{
-		$data['cases'] = $this->MCases->getFamilyCase();
-		$this->load->view('case_family', $data);
+		$this->load->view('case_business');
 	}
 
 	public function finance()
 	{
-		$data['cases'] = $this->MCases->getFinanceCase();
-		$this->load->view('case_finance', $data);
+		$this->load->view('case_business');
 	}
 }

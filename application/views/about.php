@@ -60,24 +60,22 @@
     <!-- our_loyers-start  -->
     <div class="our_loyers">
         <div class="container">
-                <div class="row">
-                        <div class="col-xl-12">
-                            <div class="section_title text-center mb-60">
-                                <h3>Our Lawyers</h3>
-                                <p>Many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some.</p>
-                            </div>
-                        </div>
-                    </div>
             <div class="row">
-                
-                <?php foreach ($lawyers as $lawyer): ?>
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-60">
+                        <h3>Our Lawyers</h3>
+                        <p>Many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_loyers text-center">
                         <div class="thumb">
-                            <img src="<?php echo base_url() . $lawyer->photo; ?>" class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
                         </div>
-                        <h3><?php echo $lawyer->name; ?></h3>
-                        <span><?php echo $lawyer->field ?></span>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
                         <div class="social_links">
                             <ul>
                                 <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
@@ -87,8 +85,40 @@
                         </div>
                     </div>
                 </div>
-                <?php endforeach ?>
+                
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -101,21 +131,28 @@
             <div class="row">
 
                 <div class="col-xl-12">
-                    <div class="testmonial_active owl-carousel">
-                        
-                        <?php foreach ($testimonials as $testimony): ?>
+                    <div class="testmonial_active owl-carousel">                        
                         <div class="single_testmonial text-center">
                             <i class="flaticon-straight-quotes"></i>
-                            <p><?php echo $testimony->message; ?></p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor optio iure. Officia modi eius dolorem id excepturi, aliquid delectus consequuntur adipisci, atque voluptatem eum minus ad culpa reprehenderit ipsa?</p>
                             <div class="author_info d-flex justify-content-center align-items-center">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url() . $testimony->photo ?>" alt="">
+                                    <img src="<?php echo base_url(); ?>img/testmonial/smaill_thumb.png" alt="">
                                 </div>
-                                <span>- <?php echo $testimony->name; ?></span>
+                                <span>- Chloe Jane Decker</span>
                             </div>
                         </div>
-                        <?php endforeach ?>
 
+                        <div class="single_testmonial text-center">
+                            <i class="flaticon-straight-quotes"></i>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor optio iure. Officia modi eius dolorem id excepturi, aliquid delectus consequuntur adipisci, atque voluptatem eum minus ad culpa reprehenderit ipsa?</p>
+                            <div class="author_info d-flex justify-content-center align-items-center">
+                                <div class="thumb">
+                                    <img src="<?php echo base_url(); ?>img/testmonial/smaill_thumb.png" alt="">
+                                </div>
+                                <span>- Chloe Jane Decker 2</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

@@ -35,23 +35,38 @@
 
             <div class="row no-gutters">
                 
-                <?php foreach ($cases as $case): ?>
                 <div class="col-xl-3 col-md-6">
                     <div class="single_practice">
                         <div class="practice_image">
-                            <img src="<?php echo $case->photo; ?>" alt="">
+                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/91884522.jpg?k=94639cb08b7fdb3574179f087bc1ae9e1f2eb675f09eb5c667691368fe9c51e4&o=" alt="">
                         </div>
                         <div class="practice_hover text-center">
                             <div class="hover_inner">
                                 <i class="flaticon-case"></i>
-                                <h3><?php echo $case->title; ?></h3>
-                                <p><?php echo $case->description; ?></p>
+                                <h3>Transaction of kitten in Gang Delima</h3>
+                                <p>A mega hit story in this year, and we are proud for had assisted this case</p>
                                 <a href="#" class="lern_more">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php endforeach ?>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="single_practice">
+                        <div class="practice_image">
+                            <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/91884522.jpg?k=94639cb08b7fdb3574179f087bc1ae9e1f2eb675f09eb5c667691368fe9c51e4&o=" alt="">
+                        </div>
+                        <div class="practice_hover text-center">
+                            <div class="hover_inner">
+                                <i class="flaticon-case"></i>
+                                <h3>Transaction of kitten in Gang Delima</h3>
+                                <p>A mega hit story in this year, and we are proud for had assisted this case</p>
+                                <a href="#" class="lern_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>

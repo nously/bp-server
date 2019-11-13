@@ -1,13 +1,5 @@
 <?php include "template/header.php"; ?>
 
-<?php if($this->session->flashdata('msg')): ?>
-    <div class="card notification">
-        <div class="card-body pl-5">
-            <p style="color:rgb(200,200,200);"><?php echo $this->session->flashdata('msg'); ?></p>
-        </div>
-    </div>
-<?php endif; ?>
-
 <!-- slider_area_start -->
     <div class="slider_area ">
         <div class="slider_area_inner slider_bg_1 d-flex align-items-center">
@@ -39,9 +31,9 @@
                 <div class="col-xl-6 col-md-6">
                 
                     <div class="single_about_info text-center">
-                        <a href="<?php echo base_url(); ?>lawyer">
+                        <a href="<?php echo base_url(); ?>index.php/lawyer">
                         <div class="about_thumb">
-    			    <img src="<?php echo base_url(); ?>img/about/1.png" alt="">
+    			            <img src="<?php echo base_url(); ?>img/about/1.png" alt="">
                         </div>
                         <h3>This Month's Finest<br>
                             - John "Kitten" Rawless -</h3>
@@ -50,7 +42,7 @@
                         This case brings him to the top wanted lawyer for <br>
                         cat-related cases. Good job, Rawless!</p>
                         <div class="signature">
-			    <img src="<?php echo base_url(); ?>img/about/signature.png" alt="">
+			                <img src="<?php echo base_url(); ?>img/about/signature.png" alt="">
                         </div>
                     </div>
 
@@ -99,23 +91,69 @@
             </div>
             <div class="row no-gutters">
 
-                <?php foreach ($fields as $field): ?>
                 <div class="col-xl-3 col-md-6">
                     <div class="single_practice">
                         <div class="practice_image">
-                            <img src="<?php echo base_url() . $field->photo; ?>" alt="">
+                            <img src="<?php echo base_url(); ?>img/blog/blog_1.png" alt="">
                         </div>
                         <div class="practice_hover text-center">
                             <div class="hover_inner">
                                 <i class="flaticon-case"></i>
-                                <h3><?php echo $field->name; ?></h3>
-                                <p><?php echo $field->description; ?></p>
-                                <a href="<?php echo base_url() . 'cases/' . substr($field->name,0, -4); ?>" class="lern_more">Learn More</a>
+                                <h3>Finance Law</h3>
+                                <p>Some passage are blablabla</p>
+                                <a href="cases/finance" class="lern_more">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php endforeach ?>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="single_practice">
+                        <div class="practice_image">
+                            <img src="<?php echo base_url(); ?>img/blog/blog_1.png" alt="">
+                        </div>
+                        <div class="practice_hover text-center">
+                            <div class="hover_inner">
+                                <i class="flaticon-case"></i>
+                                <h3>Finance Law</h3>
+                                <p>Some passage are blablabla</p>
+                                <a href="cases/finance" class="lern_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="single_practice">
+                        <div class="practice_image">
+                            <img src="<?php echo base_url(); ?>img/blog/blog_1.png" alt="">
+                        </div>
+                        <div class="practice_hover text-center">
+                            <div class="hover_inner">
+                                <i class="flaticon-case"></i>
+                                <h3>Finance Law</h3>
+                                <p>Some passage are blablabla</p>
+                                <a href="cases/finance" class="lern_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="single_practice">
+                        <div class="practice_image">
+                            <img src="<?php echo base_url(); ?>img/blog/blog_1.png" alt="">
+                        </div>
+                        <div class="practice_hover text-center">
+                            <div class="hover_inner">
+                                <i class="flaticon-case"></i>
+                                <h3>Finance Law</h3>
+                                <p>Some passage are blablabla</p>
+                                <a href="cases/finance" class="lern_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -135,14 +173,14 @@
                     </div>
             <div class="row">
                 
-                <?php foreach ($lawyers as $lawyer): ?>
+                
                 <div class="col-xl-4 col-md-6 col-lg-4">
                     <div class="single_loyers text-center">
                         <div class="thumb">
-			    <img src="<?php echo base_url() . $lawyer->photo; ?>" class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
                         </div>
-                        <h3><?php echo $lawyer->name; ?></h3>
-                        <span><?php echo $lawyer->field ?></span>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
                         <div class="social_links">
                             <ul>
                                 <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
@@ -152,7 +190,41 @@
                         </div>
                     </div>
                 </div>
-                <?php endforeach ?>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_loyers text-center">
+                        <div class="thumb">
+                            <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" class="thumb">
+                        </div>
+                        <h3>Charlotte Richards</h3>
+                        <span>Finance Law</span>
+                        <div class="social_links">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
 
             </div>
         </div>
@@ -168,18 +240,26 @@
                 <div class="col-xl-12">
                     <div class="testmonial_active owl-carousel">
                         
-                        <?php foreach ($testimonials as $testimony): ?>
                         <div class="single_testmonial text-center">
                             <i class="flaticon-straight-quotes"></i>
-                            <p><?php echo $testimony->message; ?></p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor optio iure. Officia modi eius dolorem id excepturi, aliquid delectus consequuntur adipisci, atque voluptatem eum minus ad culpa reprehenderit ipsa?</p>
                             <div class="author_info d-flex justify-content-center align-items-center">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url() . $testimony->photo ?>" alt="">
+                                    <img src="img/testmonial/smaill_thumb.png" alt="">
                                 </div>
-                                <span>- <?php echo $testimony->name; ?></span>
+                                <span>- Chloe Jane Decker</span>
                             </div>
                         </div>
-                        <?php endforeach ?>
+                        <div class="single_testmonial text-center">
+                            <i class="flaticon-straight-quotes"></i>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor optio iure. Officia modi eius dolorem id excepturi, aliquid delectus consequuntur adipisci, atque voluptatem eum minus ad culpa reprehenderit ipsa?</p>
+                            <div class="author_info d-flex justify-content-center align-items-center">
+                                <div class="thumb">
+                                    <img src="img/testmonial/smaill_thumb.png" alt="">
+                                </div>
+                                <span>- Chloe Jane Decker2</span>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -196,7 +276,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-5 col-md-6 col-lg-6">
                     <div class="appiontment_thumb d-none d-lg-block">
- 		        <img src="<?php echo base_url(); ?>img/appointment/1.png" alt="">
+ 		        <img src="img/appointment/1.png" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 offset-xl-1 col-md-6 col-md-12 col-lg-6">
@@ -206,22 +286,22 @@
                         </div>
                         <h3>Make an Appointment</h3>
                         <p>Many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-                        <form action="<?php echo base_url() . 'appointment/make'; ?>" method="post">
+                        <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-xl-6 col-md-6">
-                                            <input type="text" name="name" placeholder="Your Name" value="<?php echo set_value('name'); ?>">
+                                            <input type="text" name="name" placeholder="Your Name">
                                     </div>
                                     <div class="col-xl-6 col-md-6">
-                                            <input type="email" name="email" placeholder="Your Email" value="<?php echo set_value('email'); ?>">
+                                            <input type="email" name="email" placeholder="Your Email" >
                                     </div>
                                     <div class="col-xl-6 col-md-6">
-                                            <input type="text" name="phone" placeholder="Phone no." value="<?php echo set_value('phone'); ?>">
+                                            <input type="text" name="phone" placeholder="Phone no." >
                                     </div>
                                     <div class="col-xl-6 col-md-6">
-                                        <input id="datepicker" name="date" placeholder="Appointment date" value="<?php echo set_value('date'); ?>">
+                                        <input id="datepicker" name="date" placeholder="Appointment date" >
                                     </div>
                                     <div class="col-xl-12">
-                                        <textarea placeholder="Message" name="message" value="<?php echo set_value('message'); ?>"></textarea>
+                                        <textarea placeholder="Message" name="message" ></textarea>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="appoinment_button">

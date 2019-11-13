@@ -21,7 +21,7 @@
     <div class="our_loyers">
         <div class="container">
 
-            <?php for ($i = 0; $i < count($lawyers); $i++): ?>
+
             <!-- ONE Lawyer -->
             <div class="row mb-5">
                <div class="card col-xl-12 col-md-12 col-lg-12">
@@ -30,9 +30,9 @@
                         <div class="col-xl-4 col-md-4 col-lg-4">
                            <div class="single_loyers text-center">
                                  <div class="thumb" style="  width: 150px; height: 150px;">
-                                    <img src="<?php echo base_url() . $lawyers[$i][0]->photo; ?>" alt="">
+                                    <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" alt="">
                                  </div>
-                                 <h3><?php echo $lawyers[$i][0]->name; ?></h3>
+                                 <h3>Charlotte Richards</h3>
                                  <span>Family Lawyer</span>
                                  <div class="social_links">
                                     <ul>
@@ -45,22 +45,115 @@
                         </div>
 
                         <div class="col-xl-8 col-md-8 col-lg-8">
-                           <?php foreach ($lawyers[$i] as $education): ?>
                            <div>
-                              <h3><?php echo $education->degree; ?></h3>
-                              <a class="pull-right" href="<?php echo base_url() . 'lawyer/education/' . $education->certificate; ?>">Certificate >></a>
-                              <p class="card-text"><?php echo $education->university; ?>, <?php echo $education->study_field; ?> </p>
+                              <h3>Master of Law</h3>
+                              <a class="pull-right" href="#">Certificate >></a>
+                              <p class="card-text">University of Michn, Business Law  </p>
                            </div>
-
                            <div class="dropdown-divider"></div>
-                           <?php endforeach; ?>
+
+                           <div>
+                              <h3>Doctor of Philoshophy</h3>
+                              <a class="pull-right" href="#">Certificate >></a>
+                              <p class="card-text">University of Michn, Business Law  </p>
+                           </div>
+                           <div class="dropdown-divider"></div>
                         </div>
+                        
                      </div>
                   </div>
                </div>
-
             </div>
-            <?php endfor; ?>
+
+            <!-- ONE Lawyer -->
+            <div class="row mb-5">
+               <div class="card col-xl-12 col-md-12 col-lg-12">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                           <div class="single_loyers text-center">
+                                 <div class="thumb" style="  width: 150px; height: 150px;">
+                                    <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" alt="">
+                                 </div>
+                                 <h3>Charlotte Richards</h3>
+                                 <span>Family Lawyer</span>
+                                 <div class="social_links">
+                                    <ul>
+                                       <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                    </ul>
+                                 </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xl-8 col-md-8 col-lg-8">
+                           <div>
+                              <h3>Master of Law</h3>
+                              <a class="pull-right" href="#">Certificate >></a>
+                              <p class="card-text">University of Michn, Business Law  </p>
+                           </div>
+                           <div class="dropdown-divider"></div>
+
+                           <div>
+                              <h3>Doctor of Philoshophy</h3>
+                              <a class="pull-right" href="#">Certificate >></a>
+                              <p class="card-text">University of Michn, Business Law  </p>
+                           </div>
+                           <div class="dropdown-divider"></div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- ONE Lawyer -->
+            <div class="row mb-5">
+               <div class="card col-xl-12 col-md-12 col-lg-12">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                           <div class="single_loyers text-center">
+                                 <div class="thumb" style="  width: 150px; height: 150px;">
+                                    <img src="<?php echo base_url(); ?>img/lawyers/4.jpg" alt="">
+                                 </div>
+                                 <h3>Charlotte Richards</h3>
+                                 <span>Family Lawyer</span>
+                                 <div class="social_links">
+                                    <ul>
+                                       <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                    </ul>
+                                 </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xl-8 col-md-8 col-lg-8">
+                           <div>
+                              <h3>Master of Law</h3>
+                              <a class="pull-right" href="#">Certificate >></a>
+                              <p class="card-text">University of Michn, Business Law  </p>
+                           </div>
+                           <div class="dropdown-divider"></div>
+
+                           <div>
+                              <h3>Doctor of Philoshophy</h3>
+                              <a class="pull-right" href="#">Certificate >></a>
+                              <p class="card-text">University of Michn, Business Law  </p>
+                           </div>
+                           <div class="dropdown-divider"></div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            
+
 
         </div>
     </div>
