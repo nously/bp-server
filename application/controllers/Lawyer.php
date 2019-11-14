@@ -42,7 +42,7 @@ class Lawyer extends CI_Controller {
 			$privateKey = new Crypt_RSA();
 			$privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
 			if (!$sftp->login()) {
-				echo $sftp->getSFTPLog();
+				echo "HAAH?!";
 				die();
 			} else {
 				$sftp->chdir('upload');
