@@ -50,13 +50,9 @@ class Lawyer extends CI_Controller {
 				header('Content-type: application/pdf');
 				header('Content-Disposition: inline; filename="' . $certificate . '.pdf"');
 				header('Content-Transfer-Encoding: binary');
-				// header('Content-Length: ' . filesize($file));
 				header('Accept-Ranges: bytes');
 
   				echo $result;
-				// file_put_contents(APPPATH . 'third_party/file_from_sftp/'. $certificate .'.pdf', $result);
-				// $file = base64_encode(file_get_contents(APPPATH . 'third_party/file_from_sftp/'. $certificate .'.pdf'));
-
 			}
 		}
 	}
