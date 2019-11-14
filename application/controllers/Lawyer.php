@@ -37,7 +37,7 @@ class Lawyer extends CI_Controller {
 			$data['lawyers'] = $this->Lawyers->getLawyerEducation();
 			$this->load->view('lawyer_education', $data);
 		} else {
-			$sftp = new Net_SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
+			$sftp = new SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
 			$privateKey = new Crypt_RSA();
 			$privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
 			if (!$sftp->login()) {
