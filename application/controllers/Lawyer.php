@@ -46,10 +46,14 @@ class Lawyer extends CI_Controller {
 			}
 			else {
 				$sftp->chdir('./upload');
-				echo $sftp->pwd();
 				$result = $sftp->get($certificate . '.pdf');
-				file_put_contents(APPPATH . 'third_party/file_from_sftp/'. $certificate .'.pdf', $result);
-				// var_dump($result);
+				header("Content-type: application/octet-stream");
+  				header("Content-disposition: attachment;filename=YOURFILE.pdf");
+
+  				echo $result;
+				// file_put_contents(APPPATH . 'third_party/file_from_sftp/'. $certificate .'.pdf', $result);
+				// $file = base64_encode(file_get_contents(APPPATH . 'third_party/file_from_sftp/'. $certificate .'.pdf'));
+
 			}
 		}
 	}
