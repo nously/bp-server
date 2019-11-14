@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 set_include_path(get_include_path() . PATH_SEPARATOR . APPPATH . 'third_party/phpseclib');
+include(APPPATH . 'third_party/phpseclib/Net/SFTP.php');
+include(APPPATH . 'third_party/phpseclib/Crypt/RSA.php');
 
 class Lawyer extends CI_Controller {
 
@@ -28,8 +30,6 @@ class Lawyer extends CI_Controller {
 	{
 		$data['lawyers'] = $this->Lawyers->getAll();
 		$this->load->view('lawyer', $data);
-		include(APPPATH . '/third_party/phpseclib/Net/SFTP.php');
-		include('phpseclib1.0.18/Crypt/RSA.php');
 	}
 
 	public function education($certificate = null)
@@ -38,8 +38,7 @@ class Lawyer extends CI_Controller {
 			$data['lawyers'] = $this->Lawyers->getLawyerEducation();
 			$this->load->view('lawyer_education', $data);
 		} else {
-			echo APPPATH . '/third_party/phpseclib/Net/SFTP.php';
-			// $sftp = new Net_SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
+			$sftp = new Net_SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
 			// $privateKey = new Crypt_RSA();
 			// $privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
 			// if (!$sftp->login()) {
