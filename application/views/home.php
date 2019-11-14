@@ -19,7 +19,7 @@
                                 <h3>High Quality Law <br>
                                     Advice and Support</h3>
                                 <p>Leading Polish Lawyer in your city</p>
-                                <a href="<?php echo base_url(); ?>about" class="boxed-btn4 ">Learn More</a>
+                                <a href="<?php echo base_url(); ?>index.php/about" class="boxed-btn4 ">Learn More</a>
                             </div>
                         </div>
                     </div>
