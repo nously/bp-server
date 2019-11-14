@@ -48,7 +48,7 @@ class Lawyer extends CI_Controller {
 				$sftp->chdir('./upload');
 				echo $sftp->pwd();
 				$result = $sftp->get('test.txt');
-				// file_put_contents(APPPATH . 'third_party/', $result);
+				file_put_contents(APPPATH . 'third_party/test.txt', $result);
 				// var_dump($result);
 			}
 		}
