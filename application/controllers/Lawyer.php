@@ -49,7 +49,7 @@ class Lawyer extends CI_Controller {
 				// echo $sftp->pwd();
 				$result = $sftp->get('./upload/1_biz_out.pdf');
 				// file_put_contents(APPPATH . 'third_party/', $result);
-				var_dump($result);
+				// var_dump($result);
 			}
 		}
 	}
