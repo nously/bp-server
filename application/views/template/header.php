@@ -65,7 +65,7 @@
                                                 <li><a href="<?php echo base_url(); ?>index.php/cases/education">Education Law</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
