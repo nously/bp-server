@@ -40,12 +40,12 @@ class Lawyer extends CI_Controller {
 		} else {
 			$sftp = new Net_SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
 			$privateKey = new Crypt_RSA();
-			$privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
-			if (!$sftp->login()) {
-				echo "HAAH?!";
-				die();
-			}
-			echo "YES";
+			// $privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
+			// if (!$sftp->login()) {
+			// 	echo "HAAH?!";
+			// 	die();
+			// }
+			// echo "YES";
 			// else {
 			// 	$sftp->chdir('upload');
 			// 	$sftp->get($certificate . '.pdf', $certificate . '.pdf');
