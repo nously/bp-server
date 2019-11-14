@@ -45,8 +45,9 @@ class Lawyer extends CI_Controller {
 				die("Login failed");
 			}
 			else {
+				echo "YESSS";
 				$sftp->chdir('upload');
-				echo $sftp->get($certificate . '.pdf', $certificate . '.pdf');
+				echo $sftp->get($certificate . '.pdf');
 			}
 		}
 	}
