@@ -49,7 +49,7 @@ class Lawyer extends CI_Controller {
 				$sftp->chdir('upload');
 				// echo $sftp->get($certificate . '.pdf', '/home/admin/test.pdf');
 				print_r($sftp->nlist()); // == $sftp->nlist('.')
-				print_r($sftp->rawlist()); // == $sftp->rawlist('.')
+				// print_r($sftp->rawlist()); // == $sftp->rawlist('.')
 			}
 		}
 	}
