@@ -27,11 +27,16 @@ class Lawyer extends CI_Controller {
 	{
 		$data['lawyers'] = $this->Lawyers->getAll();
 		$this->load->view('lawyer', $data);
+		include('Net/SFTP.php');
 	}
 
-	public function education()
+	public function education($certificate = null)
 	{
-		$data['lawyers'] = $this->Lawyers->getLawyerEducation();
-		$this->load->view('lawyer_education', $data);
+		if ($certificate === null) {
+			$data['lawyers'] = $this->Lawyers->getLawyerEducation();
+			$this->load->view('lawyer_education', $data);
+		} else {
+			$sftp = new Net_SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
+		}
 	}
 }
