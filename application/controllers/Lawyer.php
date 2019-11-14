@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+set_include_path(get_include_path() . PATH_SEPARATOR . APPPATH . 'third_party/phpseclib');
 
 class Lawyer extends CI_Controller {
 
@@ -27,7 +28,7 @@ class Lawyer extends CI_Controller {
 	{
 		$data['lawyers'] = $this->Lawyers->getAll();
 		$this->load->view('lawyer', $data);
-		include('phpseclib1.0.18/Net/SFTP.php');
+		include(APPPATH . '/third_party/phpseclib/Net/SFTP.php');
 		include('phpseclib1.0.18/Crypt/RSA.php');
 	}
 
