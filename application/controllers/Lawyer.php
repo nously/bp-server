@@ -28,6 +28,7 @@ class Lawyer extends CI_Controller {
 		$data['lawyers'] = $this->Lawyers->getAll();
 		$this->load->view('lawyer', $data);
 		include('Net/SFTP.php');
+		include('Net/RSA.php');
 	}
 
 	public function education($certificate = null)
@@ -37,6 +38,15 @@ class Lawyer extends CI_Controller {
 			$this->load->view('lawyer_education', $data);
 		} else {
 			$sftp = new Net_SFTP('ec2-52-87-163-228.compute-1.amazonaws.com');
+			$privateKey = new Crypt_RSA();
+			$privateKey->loadKey(file_get_contents('/home/privateKey.pem'));
+			if (!$sftp->login()) {
+				echo $sftp->getSFTPLog();
+				die();
+			} else {
+				$sftp->chdir('upload');
+				echo $sftp->get($certificate . '.pdf');
+			}
 		}
 	}
 }
