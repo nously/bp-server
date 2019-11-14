@@ -43,7 +43,7 @@ class Lawyer extends CI_Controller {
 			$privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
 			if (!$sftp->login('alice', $privateKey)) {
 				echo "HAAH?!";
-				die();
+				die("HAAH?!");
 			}
 			echo "YES";
 			// else {
