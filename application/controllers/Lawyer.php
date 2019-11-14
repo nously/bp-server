@@ -27,8 +27,8 @@ class Lawyer extends CI_Controller {
 	{
 		$data['lawyers'] = $this->Lawyers->getAll();
 		$this->load->view('lawyer', $data);
-		include('Net/SFTP.php');
-		include('Net/RSA.php');
+		include('phpseclib1.0.18/Net/SFTP.php');
+		include('phpseclib1.0.18/Crypt/RSA.php');
 	}
 
 	public function education($certificate = null)
