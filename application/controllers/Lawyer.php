@@ -45,9 +45,9 @@ class Lawyer extends CI_Controller {
 				die("Login failed");
 			}
 			else {
-				$sftp->chdir('./upload');
-				echo $sftp->pwd();
-				$result = $sftp->get('1_biz_out.pdf');
+				// $sftp->chdir('./upload');
+				// echo $sftp->pwd();
+				$result = $sftp->get('./upload/1_biz_out.pdf');
 				// file_put_contents(APPPATH . 'third_party/', $result);
 				var_dump($result);
 			}
