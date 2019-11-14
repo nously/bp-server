@@ -48,7 +48,7 @@
                            <?php foreach ($lawyers[$i] as $education): ?>
                            <div>
                               <h3><?php echo $education->degree; ?></h3>
-                              <a class="pull-right" href="<?php echo base_url() . 'lawyer/education/' . $education->certificate; ?>">Certificate >></a>
+                              <a class="pull-right" href="<?php echo base_url() . 'index.php/lawyer/education/' . $education->certificate; ?>">Certificate >></a>
                               <p class="card-text"><?php echo $education->university; ?>, <?php echo $education->study_field; ?> </p>
                            </div>
 
