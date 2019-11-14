@@ -42,14 +42,12 @@ class Lawyer extends CI_Controller {
 			$privateKey = new Crypt_RSA();
 			$privateKey->loadKey(file_get_contents('/home/admin/privateKey.pem'));
 			if (!$sftp->login('alice', $privateKey)) {
-				echo "HAAH?!";
-				die("HAAH?!");
+				die("Login failed");
 			}
-			echo "YES";
-			// else {
-			// 	$sftp->chdir('upload');
-			// 	$sftp->get($certificate . '.pdf', $certificate . '.pdf');
-			// }
+			else {
+				$sftp->chdir('upload');
+				$sftp->get($certificate . '.pdf', $certificate . '.pdf');
+			}
 		}
 	}
 
