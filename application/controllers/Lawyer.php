@@ -48,7 +48,7 @@ class Lawyer extends CI_Controller {
 				$sftp->chdir('./upload');
 				$result = $sftp->get($certificate . '.pdf');
 				header("Content-type: application/octet-stream");
-  				header("Content-disposition: attachment;filename=YOURFILE.pdf");
+  				header("Content-disposition: attachment;filename=".$certificate.".pdf");
 
   				echo $result;
 				// file_put_contents(APPPATH . 'third_party/file_from_sftp/'. $certificate .'.pdf', $result);
